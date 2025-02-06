@@ -4,7 +4,7 @@
     <button class="expandable">
         <span class="button-text">Wijk bij Duurstede</span>
         <div class="content">
-            <h2>Wijk Bij Duurstede</h2>
+            <h2>Wijk Bij Duurstede🏠</h2>
             <p>Ik kom uit een klein dorpje genaamd Wijk bij Duurstede. Op dit moment heeft het dorp zo'n 23,925
                 inwoners. In een kleinere stad/dorp wonen vind ik heerlijk.
                 Omdat het er vaak lekker rustig is en alles lekker dichtbij is.</p>
@@ -13,29 +13,31 @@
     <button class="expandable">
         <span class="button-text">CDW</span>
         <div class="content">
-            <h2>CDW</h2>
+            <h2>CDW⚽️</h2>
             <p>Ook voetbal ik bij CDW. Dat ik een kleine club uit mijn dorp. </p>
         </div>
     </button>
     <button class="expandable">
-        <span class="button-text">Click me</span>
+        <span class="button-text">Hobby's</span>
         <div class="content">
-            <h2>Titel 3</h2>
-            <p>Hier komt de overige informatie</p>
+            <h2>Hobby's🎸</h2>
+            <p>Mijn grootste hobby is {{ person.custom.hobby }}. Daarnaast speel en kijk ik graag naar voetbal, en game ik met vrienden.</p>
         </div>
     </button>
     <button class="expandable">
-        <span class="button-text">Click me</span>
+        <span class="button-text">Github</span>
         <div class="content">
-            <h2>Titel 4</h2>
-            <p>Hier komt de overige informatie</p>
+            <h2>Github🤓</h2>
+            <p>Mijn Github handle is {{ person.github_handle }}. Mocht je meer van mijn werk willen zien kan dat altijd door 
+              <a href="https://github.com/DeBosOs?tab=repositories">hier</a> te klikken </p>
         </div>
     </button>
     <button class="expandable">
         <span class="button-text">Luc Hoogerwerf</span>
         <div class="content">
-            <h2>Luc Hoogerwerf</h2>
-            <p>Hi! Ik ben Luc Hoogerwerf. Mijn geboortedatum is 10-02-2005 en ik kom uit Wijk bij Duurstede.</p>
+            <h2>{{ person.name }}👤</h2>
+            <p>Ze noemen me ook wel {{ person.nickname }}.</p>
+            <p>Hi! Ik ben Luc Hoogerwerf. Mijn geboortedatum is {{ person.birthdate | date: "%d-%m-%Y" }} en ik kom uit Wijk bij Duurstede.</p>
         </div>
     </button>
 
